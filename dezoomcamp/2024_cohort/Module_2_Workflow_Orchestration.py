@@ -1,21 +1,20 @@
 import streamlit as st
 from st_pages import add_page_title, hide_pages
+from components import craftcourse_banner
 
 add_page_title(layout="wide")
 
 hide_pages(["Thank you"])
 
 st.success("""
-> If you're looking for Airflow videos from the 2022 edition, check the [2022 cohort folder](../cohorts/2022/week_2_data_ingestion/).  
+> If you're looking for Airflow videos from the 2022 edition, check the [2022 cohort folder](../cohorts/2022/week_2_data_ingestion/).
 > If you're looking for Prefect videos from the 2023 edition, check the [2023 cohort folder](../cohorts/2023/week_2_data_ingestion/).
 """)
-
-st.markdown("---")
 
 st.markdown("""### ⭐ If you are enjoying your learning experience please leave a Star <iframe src="https://ghbtns.com/github-btn.html?user=hamagistral&repo=de-zoomcamp-ui&type=star&count=true"  width="150" height="20" title="GitHub"></iframe>
 """, unsafe_allow_html=True)
 
-st.markdown("---")
+craftcourse_banner()
 
 st.markdown("""
 Welcome to Week 2 of the Data Engineering Zoomcamp! 🚀😤 This week, we'll be covering workflow orchestration with Mage.

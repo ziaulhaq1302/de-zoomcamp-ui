@@ -1,9 +1,12 @@
 import streamlit as st
 from st_pages import add_page_title, hide_pages
+from components import craftcourse_banner
 
 add_page_title(layout="wide")
 
 hide_pages(["Thank you"])
+
+craftcourse_banner()
 
 st.markdown("""
 ### 🧪 Data ingestion with dlt

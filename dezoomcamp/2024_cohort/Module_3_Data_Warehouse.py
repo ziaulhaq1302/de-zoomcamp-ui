@@ -1,5 +1,6 @@
 import streamlit as st
 from st_pages import add_page_title, hide_pages
+from components import craftcourse_banner
 
 add_page_title(layout="wide")
 
@@ -10,12 +11,10 @@ st.success("""
 - [Big Query basic SQL](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/week_3_data_warehouse/big_query.sql)
 """)
 
-st.markdown("---")
-
 st.markdown("""### ⭐ If you are enjoying your learning experience please leave a Star <iframe src="https://ghbtns.com/github-btn.html?user=hamagistral&repo=de-zoomcamp-ui&type=star&count=true"  width="150" height="20" title="GitHub"></iframe>
 """, unsafe_allow_html=True)
 
-st.markdown("---")
+craftcourse_banner()
 
 st.markdown("### 1. Data Warehouse")
 

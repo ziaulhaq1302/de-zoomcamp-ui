@@ -1,5 +1,6 @@
 import streamlit as st
 from st_pages import Page, Section, show_pages, add_page_title, hide_pages
+from components import craftcourse_banner
 
 add_page_title()
 
@@ -50,7 +51,7 @@ st.image("https://pbs.twimg.com/media/FmmYA2YWYAApPRB.png")
 
 st.info("Original Course Repository on [Github](https://github.com/DataTalksClub/data-engineering-zoomcamp)")
 
-st.markdown("---")
+craftcourse_banner()
 
 with st.expander("Sign up here for 2024 Cohort"):
     st.markdown("""
